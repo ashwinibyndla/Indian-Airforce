@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IAF</title>
+    <link rel="icon" href="icon .jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    </script>
+    <style>
+       nav {
+            height: 90px;
+            width: 100%;
+            display: flex;
+            position: fixed;
+            background: linear-gradient(skyblue, white);
+            box-shadow: 1px 1px 2px 2px skyblue;
+            justify-content: space-between;
+            z-index: 1000;
+            margin-top: -24px;
+            line-height: 70px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 20px;
+            margin: 15px;
+            padding: 25px;
+            top: -15px;
+            left: -60px;
+            position: relative;
+            font-weight: bold;
+        }
+
+        nav .logo img {
+            height: 60px;
+            width: 100px;
+            margin-left: 60px;
+            cursor: pointer;
+            margin-top: 28px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(235, 34, 67);
+            font-family: "Dancing Script", cursive;
+            font-size: 25px;
+        }
+
+        nav ul li a:hover {
+            color: blue;
+
+        }
+
+        .login_btn {
+            color: blue;
+            position: absolute;
+            left: 1200px;
+            top: 42px;
+            width: 100px;
+            height: 30px;
+            background-color: rgb(35, 248, 35);
+            font-weight: bold;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 18px;
+            box-shadow: 1px 1px 2px 2px rgb(81, 79, 79);
+            line-height: 30px;
+        }
+
+        .login_btn:hover {
+            background-color: yellow;
+        }
+
+        #course1 {
+            height: 270px;
+            width: 270px;
+            position: absolute;
+            top: 150px;
+            left: 10px;
+        }
+
+        .defence {
+            position: absolute;
+            top: 100px;
+            left: 305px;
+            font-size: 45px;
+            color: rgb(9, 105, 230);
+        }
+
+        .defencepara {
+            font-size: 20px;
+            position: absolute;
+            top: 200px;
+            left: 300px;
+        }
+
+        .line {
+            position: absolute;
+            top: 330px;
+            left: 300px;
+            border: 1px solid black;
+            /* height: 1px; */
+            width: 750px;
+        }
+
+        .wtsapp {
+            position: absolute;
+            top: 350px;
+            left: 300px;
+            font-size: 20px;
+        }
+
+        .fee_btn {
+            color: rgb(84, 79, 79);
+            position: absolute;
+            left: 500px;
+            top: 365px;
+            width: 200px;
+            height: 30px;
+            background-color: pink;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            border: transparent;
+            box-shadow: 2px 2px 3px 3px rgb(63, 61, 61);
+        }
+
+        .fee_btn:hover {
+            background-color: rgb(201, 181, 65);
+        }
+
+        .price_btn {
+            color: rgb(84, 79, 79);
+            position: absolute;
+            left: 800px;
+            top: 365px;
+            width: 200px;
+            height: 30px;
+            background-color: pink;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            border: transparent;
+            box-shadow: 2px 2px 3px 3px rgb(63, 61, 61);
+        }
+
+        .price_btn:hover {
+            background-color: rgb(201, 181, 65);
+        }
+
+        #course2 {
+            height: 270px;
+            width: 270px;
+            position: absolute;
+            top: 500px;
+            left: 10px;
+        }
+
+        .defence2 {
+            position: absolute;
+            top: 460px;
+            left: 305px;
+            font-size: 45px;
+            color: rgb(224, 18, 42);
+        }
+
+        .defencepara2 {
+            font-size: 20px;
+            position: absolute;
+            top: 550px;
+            left: 300px;
+        }
+
+        .line2 {
+            position: absolute;
+            top: 650px;
+            left: 300px;
+            border: 1px solid black;
+            /* height: 1px; */
+            width: 750px;
+        }
+
+        .wtsapp2 {
+            position: absolute;
+            top: 680px;
+            left: 300px;
+            font-size: 20px;
+        }
+
+        .fee_btn2 {
+            color: rgb(84, 79, 79);
+            position: absolute;
+            left: 500px;
+            top: 695px;
+            width: 200px;
+            height: 30px;
+            background-color: pink;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            border: transparent;
+            box-shadow: 2px 2px 3px 3px rgb(63, 61, 61);
+        }
+
+        .fee_btn2:hover {
+            background-color: rgb(201, 181, 65);
+        }
+
+        .price_btn2 {
+            color: rgb(84, 79, 79);
+            position: absolute;
+            left: 800px;
+            top: 695px;
+            width: 200px;
+            height: 30px;
+            background-color: pink;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            border: transparent;
+            box-shadow: 2px 2px 3px 3px rgb(63, 61, 61);
+        }
+
+        .price_btn2:hover {
+            background-color: rgb(201, 181, 65);
+        }
+
+        #course3 {
+            height: 300px;
+            width: 270px;
+            position: absolute;
+            top: 800px;
+            left: 10px;
+        }
+
+        .defence3 {
+            position: absolute;
+            top: 800px;
+            left: 305px;
+            font-size: 45px;
+            color: rgb(244, 182, 10);
+        }
+
+        .defencepara3 {
+            font-size: 20px;
+            position: absolute;
+            top: 900px;
+            left: 300px;
+        }
+
+        .line3 {
+            position: absolute;
+            top: 1010px;
+            left: 300px;
+            border: 1px solid black;
+            width: 750px;
+        }
+
+        .wtsapp3 {
+            position: absolute;
+            top: 1040px;
+            left: 300px;
+            font-size: 20px;
+        }
+
+        .fee_btn3 {
+            color: rgb(84, 79, 79);
+            position: absolute;
+            left: 510px;
+            top: 1055px;
+            width: 210px;
+            height: 30px;
+            background-color: pink;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            border: transparent;
+            box-shadow: 2px 2px 3px 3px rgb(63, 61, 61);
+        }
+
+        .fee_btn3:hover {
+            background-color: rgb(201, 181, 65);
+        }
+
+        .price_btn3 {
+            color: rgb(84, 79, 79);
+            position: absolute;
+            left: 800px;
+            top: 1055px;
+            width: 200px;
+            height: 30px;
+            background-color: pink;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            border: transparent;
+            box-shadow: 2px 2px 3px 3px rgb(63, 61, 61);
+        }
+
+        .price_btn3:hover {
+            background-color: rgb(201, 181, 65);
+        }
+
+        #course4 {
+            height: 300px;
+            width: 270px;
+            position: absolute;
+            top: 1150px;
+            left: 10px;
+        }
+
+        .defence4 {
+            position: absolute;
+            top: 1130px;
+            left: 305px;
+            font-size: 45px;
+            color: rgb(90, 5, 5);
+        }
+
+        .defencepara4 {
+            font-size: 20px;
+            position: absolute;
+            top: 1230px;
+            left: 300px;
+        }
+
+        .line4 {
+            position: absolute;
+            top: 1340px;
+            left: 300px;
+            border: 1px solid black;
+            width: 750px;
+        }
+
+        .wtsapp4 {
+            position: absolute;
+            top: 1390px;
+            left: 300px;
+            font-size: 20px;
+        }
+
+        .fee_btn4 {
+            color: rgb(84, 79, 79);
+            position: absolute;
+            left: 510px;
+            top: 1405px;
+            width: 210px;
+            height: 30px;
+            background-color: pink;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            border: transparent;
+            box-shadow: 2px 2px 3px 3px rgb(63, 61, 61);
+        }
+
+        .fee_btn4:hover {
+            background-color: rgb(201, 181, 65);
+        }
+
+        .price_btn4 {
+            color: rgb(84, 79, 79);
+            position: absolute;
+            left: 800px;
+            top: 1405px;
+            width: 200px;
+            height: 30px;
+            background-color: pink;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            border: transparent;
+            box-shadow: 2px 2px 3px 3px rgb(63, 61, 61);
+        }
+
+        .price_btn4:hover {
+            background-color: rgb(201, 181, 65);
+        }
+
+        #course5 {
+            height: 300px;
+            width: 270px;
+            position: absolute;
+            top: 1505px;
+            left: 10px;
+        }
+
+        .defence5 {
+            position: absolute;
+            top: 1460px;
+            left: 305px;
+            font-size: 45px;
+            color: rgb(8, 55, 240);
+        }
+
+        .defencepara5 {
+            font-size: 20px;
+            position: absolute;
+            top: 1590px;
+            left: 300px;
+        }
+
+        .line5 {
+            position: absolute;
+            top: 1690px;
+            left: 300px;
+            border: 1px solid black;
+            width: 750px;
+        }
+
+        .wtsapp5 {
+            position: absolute;
+            top: 1730px;
+            left: 300px;
+            font-size: 20px;
+        }
+
+        .fee_btn5 {
+            color: rgb(84, 79, 79);
+            position: absolute;
+            left: 510px;
+            top: 1745px;
+            width: 215px;
+            height: 30px;
+            background-color: pink;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            border: transparent;
+            box-shadow: 2px 2px 3px 3px rgb(63, 61, 61);
+        }
+
+        .fee_btn5:hover {
+            background-color: rgb(201, 181, 65);
+        }
+
+        .price_btn5 {
+            color: rgb(84, 79, 79);
+            position: absolute;
+            left: 800px;
+            top: 1745px;
+            width: 215px;
+            height: 30px;
+            background-color: pink;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            border: transparent;
+            box-shadow: 2px 2px 3px 3px rgb(63, 61, 61);
+        }
+
+        .price_btn5:hover {
+            background-color: rgb(201, 181, 65);
+        }
+
+        .more_btn {
+            color: rgb(75, 33, 5);
+            position: absolute;
+            left: 510px;
+            top: 1835px;
+            width: 220px;
+            height: 60px;
+            background-color: rgb(54, 205, 167);
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            border: transparent;
+            box-shadow: 2px 2px 3px 3px rgb(63, 61, 61);
+        }
+
+        /* .more_btn:hover {
+            background-color: rgb(202, 106, 215);
+        } */
+
+        #rg:hover i {
+            transform: translateX(5px);
+        }
+
+        #rg:hover {
+            background-color: rgb(202, 106, 215);
+        }
+
+        i {
+            margin: 8px;
+        }
+        .footer {
+            display: flex;
+            gap: 40px;
+            background: linear-gradient(pink, skyblue, rgb(231, 207, 211));
+            height: 400px;
+            width: 100%;
+            margin-top: 1600px;
+        }
+
+        .foot1,
+        .foot2,
+        .foot3 {
+            font-size: 30px;
+            color: rgb(40, 2, 2);
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 80px;
+            margin-top: 30px
+        }
+
+        .footpara1 {
+            font-size: 17px;
+            margin-left: 80px;
+        }
+
+        .appbox {
+            height: 150px;
+            width: 200px;
+            /* border: 1px solid black; */
+            box-shadow: 2px 2px 3px 3px rgb(207, 204, 204);
+            margin-top: 100px;
+            margin-left: 30px;
+        }
+
+        #face {
+            font-size: 40px;
+            padding: 5px;
+            margin-top: 8px;
+            margin-left: 5px;
+        }
+
+        #c-circle {
+          font-size: 20px;
+            margin-top: 343px;
+            margin-left: -780px;
+        }
+
+        .lastline {
+            margin-top: 340px;
+            margin-left: -30px;
+            font-size: 18px;
+        }
+
+        #footicon {
+            height: 100px;
+            width: 100px;
+            border-radius: 20%;
+            margin-top: 280px;
+            margin-left: -600px;
+        }
+
+        .as {
+            font-family: "Merriweather", serif;
+            font-size: 50px;
+            margin-top: 270px;
+            margin-left: 220px;
+            color: rgb(4, 38, 38);
+            font-weight: 40px;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="icon .jpeg" width="100vh">
+        </div>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="tribute.html">ABOUT US</a></li>
+            <li><a href="courses.html">COURSES</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+        <ul>
+            <li></li>
+            <a href="login.html"><button class="login_btn">Login</button></a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="box1">
+        <img src="./course1.jpg" id="course1">
+        <p class="defence">Defence Forces Academy.</p>
+        <p class="defencepara">National Defence Academy will continue to be the global premier joint training
+            institution<br> and centre of excellence for producing junior leaders, for the Indian Armed Forces,
+            equipped<br> with professional, moral, and physical attributes required to face the challenges of the
+            future<br> battlefield and capable of leading ...</p>
+        <p class="line"></p>
+        <p class="wtsapp"><i class="fa-brands fa-whatsapp"></i> 098711 23407</p>
+        <ul>
+            <li></li>
+            <a href="price.html"><button class="fee_btn">Fee details</button></a>
+            </li>
+
+        </ul>
+        <ul>
+            <li></li>
+            <a href="cut.html"><button class="price_btn"> Home IAF</button></a>
+            </li>
+        </ul>
+    </div>
+    <div class="box2">
+        <img src="./course2.jpg" id="course2">
+        <p class="defence2">Air Force Technical College.</p>
+        <p class="defencepara2">Air Force Technical College was established on 4 July 1949, in collaboration with Air
+            Service<br> Ltd, Hamble, UK. The college was named Technical Training College and the entire staff of
+            the<br>
+            college at that time comprised officers and technicians from the Royal Air Force.</p>
+        <p class="line2"></p>
+        <p class="wtsapp2"><i class="fa-brands fa-whatsapp"></i> 011 2301 0231</p>
+        <ul>
+            <li></li>
+            <a href="price.html"><button class="fee_btn2">Fee details</button></a>
+            </li>
+        </ul>
+        <ul>
+            <li></li>
+            <a href="selection.html"><button class="price_btn2">Selection process</button></a>
+            </li>
+        </ul>
+    </div>
+    <div class="box3">
+        <img src="./course4.jpg" id="course3">
+        <p class="defence3">Warriors Defence Academy.</p>
+        <p class="defencepara3">In essence, Warriors Defence Academy distinguishes itself by combining
+            accessibility,<br> experienced and supportive trainers, innovative training methods, and a fully
+            equipped<br> facility, making it the optimal choice for those aspiring to undergo effective army training.
+        </p>
+        <p class="line3"></p>
+        <p class="wtsapp3"><i class="fa-brands fa-whatsapp"></i> 086396 52433</p>
+        <ul>
+            <li></li>
+            <a href="price.html"><button class="fee_btn3">Fee details</button></a>
+            </li>
+        </ul>
+        <ul>
+            <li></li>
+            <a href="History.html"><button class="price_btn3">History of IAF</button></a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="box4">
+        <img src="./img4.jpg" id="course4">
+        <p class="defence4">Office Career Academy.</p>
+        <p class="defencepara4">In essence, Warriors Defence Academy distinguishes itself by combining
+            accessibility,<br> experienced and supportive trainers, innovative training methods, and a fully
+            equipped<br> facility, making it the optimal choice for those aspiring to undergo effective army training.
+        </p>
+        <p class="line4"></p>
+        <p class="wtsapp4"><i class="fa-brands fa-whatsapp"></i> 8446650474</p>
+        <ul>
+            <li></li>
+            <a href="price.html"><button class="fee_btn4">Fee details</button></a>
+            </li>
+        </ul>
+        <ul>
+            <li></li>
+            <a href="price.html"><button class="price_btn4">Price details</button></a>
+            </li>
+        </ul>
+    </div>
+    <div class="box5">
+        <img src="./img1.jpg" id="course5">
+        <p class="defence5">Force Defence.</p>
+        <p class="defencepara5">The Indian Defence Force (IDF) was a part-time defence force established as part of the
+            Indian<br> Army in 1917 in order to release regular troops from garrison ...</p>
+        <p class="line5"></p>
+        <p class="wtsapp5"><i class="fa-brands fa-whatsapp"></i> 23012286</p>
+        <ul>
+            <li></li>
+            <a href="price.html"><button class="fee_btn5">Fee details</button></a>
+            </li>
+        </ul>
+        <ul>
+            <li></li>
+            <a href="price.html"><button class="price_btn5">Price details</button></a>
+            </li>
+        </ul>
+    </div>
+    <ul>
+        <li></li>
+        <a href="price.html"><button class="more_btn" id="rg">More Information<i
+                    class="fa-solid fa-angle-right"></i></button></a>
+        </li>
+    </ul>
+    <footer class="footer">
+        <div class="one">
+            <p class="foot1">Top Academies</p>
+            <p class="footpara1">Defence Forces Academy<br> Air Force Technical College<br>Warriors Defence
+                Academy<br>Office Career Academy<br> Force Defence </p>
+        </div>
+
+        <div class="two">
+            <p class="foot2">Courses</p>
+            <p class="footpara1">NDA(National Defence Academy)<br> Aeronautical Engineering (Mechanical)<br>Navy
+                SSR<br>Independent Tertiary Education New Zealand (ITENZ)<br>Military Nursing Service (MNS)</p>
+        </div>
+        <div class="three">
+            <p class="foot3">Contact Us</p>
+            <p class="footpara1">098711 23407<br> 011 2301 0231<br>086396 52433<br> 8446650474<br>23012286</p>
+        </div>
+        <div class="appbox">
+            <i class="fa-brands fa-whatsapp" id="face"></i>
+            <i class="fa-brands fa-facebook" id="face"></i>
+            <i class="fa-brands fa-x-twitter" id="face"></i><br>
+            <i class="fa-brands fa-google" id="face"></i>
+            <i class="fa-brands fa-instagram" id="face"></i>
+            <i class="fa-solid fa-paper-plane" id="face"></i>
+        </div>
+
+        <i class="fa-regular fa-copyright"  id="c-circle"></i> 
+        <p class="lastline">All rights are reserved by Ashwini, Srividya</p>
+        <img src="./icon1.jpeg" id="footicon">
+        <p class="as">AS</p>
+
+    </footer>
+    
+
+
+   
+</body>
+
+</html>
