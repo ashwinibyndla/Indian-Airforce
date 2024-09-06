@@ -105,22 +105,22 @@
             var successElement = document.getElementById('loginSuccess');
             errorElement.style.display = 'none';
             successElement.style.display = 'none';
-            window.location.href = 'index.html';
+            window.location.href = 'home.html';
 
-            if (username === validUsername && password === validPassword) {
-                // Simulate successful login
-                successElement.textContent = 'Welcome back, ' + username + '!';
-                successElement.style.display = 'block';
+            // if (username === validUsername && password === validPassword) {
+            //     // Simulate successful login
+            //     successElement.textContent = 'Welcome back, ' + username + '!';
+            //     successElement.style.display = 'block';
 
-                // Redirect to main page after 2 seconds
-                setTimeout(function() {
-                    window.location.href = 'index.html';
-                }, 2000);
-            } else {
-                // Simulate login failure
-                errorElement.textContent = 'Invalid username or password.';
-                errorElement.style.display = 'block';
-            }
+            //     // Redirect to main page after 2 seconds
+            //     setTimeout(function() {
+            //         window.location.href = 'index.html';
+            //     }, 2000);
+            // } else {
+            //     // Simulate login failure
+            //     errorElement.textContent = 'Invalid username or password.';
+            //     errorElement.style.display = 'block';
+            // }
         });
     </script>
 </body>
