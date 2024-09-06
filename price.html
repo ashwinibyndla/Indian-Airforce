@@ -22,64 +22,35 @@
    </script>
     
     <style>
-        nav {
-            height: 70px;
-            width: 100%;
-            display: flex;
+ .navbar {
+            background-color: #003d66;
+            /* Indian Air Force Blue */
             position: fixed;
-            background: linear-gradient(skyblue, white);
-            box-shadow: 1px 1px 2px 2px skyblue;
-            justify-content: space-between;
+            width: 100%;
             z-index: 1000;
-            margin-top: -5px;
         }
 
-        nav ul li {
-            display: inline-block;
-            margin: 0 20px;
-            margin: 15px;
-            padding: 25px;
-            top: -25px;
-            left: -60px;
-            position: relative;
-            font-weight: bold;
+        .navbar-brand {
+            color: #ffffff !important;
+            margin-right: 300px;
         }
 
-        nav .logo img {
-            height: 60px;
-            width: 100px;
-            margin-left: 60px;
-            cursor: pointer;
-            margin-top: 5px;
+        .navbar-brand:hover {
+            color: #c0c0c0 !important;
         }
 
-        nav ul li a {
-            text-decoration: none;
-            color: rgb(235, 34, 67);
-            font-family: "Dancing Script", cursive;
-            font-size: 25px;
+        .navbar-nav .nav-link {
+            color: #ffffff;
+            margin-right: 60px;
+
         }
 
-        nav ul li a:hover {
-            color: blue;
+        .navbar-nav .nav-link:hover {
+            color: #c0c0c0;
         }
 
-        .login_btn {
-            color: blue;
-            position: absolute;
-            left: 1200px;
-            top: 28px;
-            width: 100px;
-            height: 30px;
-            background-color: rgb(35, 248, 35);
-            font-weight: bold;
-            border-radius: 20px;
-            cursor: pointer;
-            font-size: 18px;
-        }
-
-        .login_btn:hover {
-            background-color: yellow;
+        .navbar-toggler-icon {
+            background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="%23ffffff" stroke-width="2" d="M5 7h20M5 15h20M5 23h20"/%3E%3C/svg%3E');
         }
 
         .fee {
@@ -158,10 +129,10 @@
         }
 
         .table2 {
-            width: 80%;
+            width: 70%;
             border-collapse: collapse;
             margin-top: 40px;
-            margin-left: 150px;
+            margin-left: 10px;
         }
 
         .box11 {
@@ -185,102 +156,190 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
-            /* Space between items */
-
-            /* Center items horizontally */
             padding: 20px;
         }
         .footer {
-            display: flex;
-            gap: 40px;
-            background: linear-gradient(pink, skyblue, rgb(231, 207, 211));
-            height: 400px;
+            background-color: #003d66;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer .social-icons a {
+            color: #ffffff;
+            margin-right: 10px;
+            font-size: 1.5rem;
+        }
+
+        .footer .social-icons a:hover {
+            color: #c0c0c0;
+        }
+
+        .footer .address {
+            font-size: 0.9rem;
+        }
+
+
+        .footer .footer-logo {
+            max-width: 150px;
+        }
+        @media only screen and (min-width:320px) and (max-width:480px){
+            body{
+                overflow-x: hidden;
+            }
+
+        .fee {
+            height: 50vh;
             width: 100%;
-            margin-top: 70px;
         }
 
-        .foot1,
-        .foot2,
-        .foot3 {
-            font-size: 30px;
-            color: rgb(40, 2, 2);
-            font-weight: bold;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            margin-left: 80px;
-            margin-top: 30px
-        }
-
-        .footpara1 {
-            font-size: 17px;
-            margin-left: 80px;
-        }
-
-        .appbox {
-            height: 150px;
-            width: 200px;
-            /* border: 1px solid black; */
-            box-shadow: 2px 2px 3px 3px rgb(207, 204, 204);
+        #fee {
+            height: 200px;
+            width: 90%;
             margin-top: 100px;
-            margin-left: 30px;
+            margin-left: 10px;
         }
 
-        #face {
-            font-size: 40px;
-            padding: 5px;
-            margin-top: 8px;
-            margin-left: 5px;
+        .topic {
+            font-size: 30px;
+            color: yellow;
+            position: absolute;
+            left: 30px;
+            top: 180px;
+            font-weight: bold;
+            font-family: "Dancing Script", cursive;
         }
 
-        #c-circle {
-          font-size: 20px;
-            margin-top: 343px;
-            margin-left: -780px;
+        .info {
+            font-size: 35px;
+            margin-top: 10px;
+            margin-left: 10px;
+            color: blue;
+
         }
 
-        .lastline {
-            margin-top: 340px;
+        .table1 {
+            width: 50%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-left: 50px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr td a {
+            text-decoration: none;
+        }
+
+        .cen1 {
+            font-size: 30px;
+            color: rgb(238, 8, 85);
+            margin-top: -400px;
+            margin-left: 10px;
+        }
+
+        .p1 {
+            font-size: 16px;
+            margin-top: 40px;
+            margin-left: 50px;
+        }
+
+        .d1 {
+            margin-left: 10px;
+            font-size: 30px;
+            color: navy;
+        }
+
+        .table2 {
+            width: 98.8%;
+            border-collapse: collapse;
+            margin-top: 80px;
             margin-left: -30px;
-            font-size: 18px;
         }
 
-        #footicon {
-            height: 100px;
-            width: 100px;
-            border-radius: 20%;
-            margin-top: 280px;
-            margin-left: -600px;
+        .box11 {
+            margin-top: 440px;
         }
 
-        .as {
-            font-family: "Merriweather", serif;
-            font-size: 50px;
-            margin-top: 270px;
-            margin-left: 220px;
-            color: rgb(4, 38, 38);
-            font-weight: 40px;
+        .center1,
+        .center2,
+        .center3,
+        .center4,
+        .center5,
+        .center6,
+        .center7,
+        .center8 {
+            height: 100vh;
+            width: 80%;
+            margin-top: -140px;
         }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+        }
+    }
     </style>
 
 </head>
 
 <body>
-    <nav>
-        <div class="logo">
-            <img src="icon .jpeg" width="100vh">
-        </div>
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="tribute.html">ABOUT US</a></li>
-            <li><a href="courses.html">COURCES</a></li>
-            <li><a href="contact.html">CONTACT US</a></li>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Indian Air Force</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tribute.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="courses.html">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login1.html">LogOut</a>
+                </li>
 
-        </ul>
-        <ul>
-            <li></li>
-            <a href="login.html"><button class="login_btn">Login</button></a>
-            </li>
-        </ul>
+            </ul>
+        </div>
     </nav>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <div class="fee">
         <img src="fee.jpg" alt="" id="fee">
         <p class="topic">Cources And fees</p>
@@ -341,7 +400,7 @@
     <br>
     <br>
     <div class="container">
-        <div class="center1">
+        <div class="col-lg-12" >
             <div class="box11">
                 <p class="cen1">Defence Forces Academy</p>
                 <p class="p1">Defence Forces Academy is a coaching institute for NDA, CDS, AFCAT, CAPF, etc. Defence
@@ -389,7 +448,7 @@
             </table>
         </div>
 
-        <div class="center2">
+        <div class="col-lg-12">
             <div class="box11">
                 <p class="cen1">Force Defence Academy</p>
                 <p class="p1">Force Defence Academy (FDA) is India's No.1 Defence Career Training Academy. FDA is
@@ -432,7 +491,7 @@
             </table>
         </div>
 
-        <div class="center3">
+        <div class="col-lg-12">
             <div class="box11">
                 <p class="cen1">Roy Education</p>
                 <p class="p1">Roy Education is a leading coaching institute that provides excellent coaching for various
@@ -473,7 +532,7 @@
             </table>
         </div>
 
-        <div class="center4">
+        <div class="col-lg-12">
             <div class="box11">
                 <p class="cen1">Air Force Technical College</p>
                 <p class="p1">Air Force Technical College (AFTC) was established on 04 Jul 49 with Gp Capt J Beaumont,
@@ -516,7 +575,7 @@
                 </tbody>
             </table>
         </div>
-        <div class="center5">
+        <div class="col-lg-12">
             <div class="box11">
                 <p class="cen1">Force Defence Academy</p>
                 <p class="p1">Defence Forces Academy is a coaching institute for NDA, CDS, AFCAT, CAPF, etc. Defence
@@ -564,7 +623,7 @@
             </table>
         </div>
 
-        <div class="center6">
+        <div class="col-lg-12">
             <div class="box11">
                 <p class="cen1">Asta Education</p>
                 <p class="p1">ASTA Educational And Publication House Pvt. Ltd., earlier known as ASTA Institute, is one
@@ -609,7 +668,7 @@
             </table>
         </div>
 
-        <div class="center7">
+        <div class="col-lg-12">
             <div class="box11">
                 <p class="cen1">Officers Career Academy</p>
                 <p class="p1">Academy is headed by Prof Amit Kumar Dubey (Air Force Veteran). He is having a vast
@@ -653,7 +712,7 @@
                 </tbody>
             </table>
         </div>
-        <div class="center8">
+        <div class="col-lg-12">
             <div class="box11">
                 <p class="cen1">Tara Institute</p>
                 <p class="p1">Tara Institute is a Premier Training Centre, is an initiative of young Bankers, Railway,
@@ -698,37 +757,54 @@
         </div>
     </div>
 
-    <footer class="footer">
-        <div class="one">
-            <p class="foot1">Top Academies</p>
-            <p class="footpara1">Defence Forces Academy<br> Air Force Technical College<br>Warriors Defence
-                Academy<br>Office Career Academy<br> Force Defence </p>
-        </div>
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="icon .jpeg" alt="Indian Air Force Logo" class="footer-logo mb-3">
+                    <p class="address">Indian Air Force<br>
+                        Vayu Bhawan, Rafi Ahmed Kidwai Marg,<br>
+                        New Delhi - 110 001, India</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tribute.html">About Us</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
 
-        <div class="two">
-            <p class="foot2">Courses</p>
-            <p class="footpara1">NDA(National Defence Academy)<br> Aeronautical Engineering (Mechanical)<br>Navy
-                SSR<br>Independent Tertiary Education New Zealand (ITENZ)<br>Military Nursing Service (MNS)</p>
-        </div>
-        <div class="three">
-            <p class="foot3">Contact Us</p>
-            <p class="footpara1">098711 23407<br> 011 2301 0231<br>086396 52433<br> 8446650474<br>23012286</p>
-        </div>
-        <div class="appbox">
-            <i class="fa-brands fa-whatsapp" id="face"></i>
-            <i class="fa-brands fa-facebook" id="face"></i>
-            <i class="fa-brands fa-x-twitter" id="face"></i><br>
-            <i class="fa-brands fa-google" id="face"></i>
-            <i class="fa-brands fa-instagram" id="face"></i>
-            <i class="fa-solid fa-paper-plane" id="face"></i>
-        </div>
+                </div>
 
-        <i class="fa-regular fa-copyright"  id="c-circle"></i> 
-        <p class="lastline">All rights are reserved by Ashwini, Srividya</p>
-        <img src="./icon1.jpeg" id="footicon">
-        <p class="as">AS</p>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="www.facebook.com/indianairforce" class="fab fa-facebook-f" target="_blank"></a>
+                        <a href="https://twitter.com/IAF_MCC" class="fab fa-twitter" target="_blank"></a>
+                        <a href="https://www.instagram.com/indianairforce" class="fab fa-instagram" target="_blank"></a>
+                        <a href="https://www.linkedin.com/company/indian-air-force" class="fab fa-linkedin-in"
+                            target="_blank"></a>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        All Rights are Reserved by Ashwini & Srividya
 
+                    </div>
+                </div>
+
+            </div>
     </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Font Awesome for social icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+
+
 </body>
 
 </html>
